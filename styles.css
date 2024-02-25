@@ -1,0 +1,232 @@
+@media screen and (min-width: 781px) {
+    
+    body {
+        font-size: 20px;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); gap: 20px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    header {
+        flex-direction: column;
+    }
+    
+    body {
+        font-size: 18px;
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    header {
+        flex-direction: column;
+    }
+    
+    body {
+        font-size: 14px;
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    font-family: fredericka the great, cursive;
+    letter-spacing: 5px;
+    transition: all 0.7s ease;
+}
+body{
+    font-family: bangers, cursive;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    color: whitesmoke;
+    align-items: center;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+nav a {
+    padding: 10px 20px;
+    color: white;
+    font-family: Papyrus, cursive;
+    transition: all 0.3s ease;
+}
+
+main .about-us {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+}
+main .shop-now h2 {
+    font-family: Garamond, serif;
+    letter-spacing: 2px;
+    margin: 20px;
+}
+main .shop-now button {
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px;
+    font-family: Papyrus, cursive;
+}
+
+main .customer-reviews {
+    display: grid;
+    justify-content: center;
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+}
+
+footer {
+    
+    text-align: center;
+    background-color: #333;
+    padding: 10px;
+    margin: 0;
+    color: white;
+    letter-spacing: 3px;
+    font-family: Papyrus, cursive;
+}
+
+.product-grid {
+    display: grid;
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Product Styling */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.product-card:hover {
+    background-color: #ffffff;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    color: #007BFF;
+    font-weight: bold;
+}
+
+/* "Add to Cart" Button */
+.product-card button {
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    font-family: Papyrus, cursive;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #45A049;
+}
+
+/* Contact Information Section */
+main section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.contact-method {
+    background-color: #ddd;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+.contact-method a:hover {
+    color: #007BFF;
+}
+
+/* Login Form Section */
+main form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Form Fields */
+main form label {
+    display: block;
+    margin: 10px;
+}
+
+main form input[type="text"], input[type="password"] {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* "Login" Button */
+main form input[type="submit"] {
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    opacity: 0.5;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+main form input[type="submit"]:hover {
+    background-color: #45A049;
+    opacity: 1.0;
+}
+
+/* Signup Link */
+main p a {
+    color: #007BFF;
+    margin: 10px;
+    transition: text-decoration 0.3s ease;
+}
+
+main p a:hover {
+    text-decoration: underline;
+}
