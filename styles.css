@@ -1,3 +1,5 @@
+
+/* ---------------------------------------- SCALING -------------------------------- */
 @media screen and (min-width: 781px) {
     
     body {
@@ -11,6 +13,10 @@
 
 @media screen and (max-width: 780px) {
     header {
+        img {
+            width: 450px;
+            height: 450px;
+        }
         flex-direction: column;
     }
     
@@ -26,6 +32,7 @@
 @media screen and (max-width: 455px) {
     header {
         flex-direction: column;
+        
     }
     
     body {
@@ -36,7 +43,9 @@
         grid-template-columns: 1fr;
     }
 }
+/* ---------------------------------------- SCALING -------------------------------- */
 
+/* ---------------------------------------- GENERAL -------------------------------- */
 header {
     background-color: #333;
     padding: 20px;
@@ -69,6 +78,20 @@ nav a {
     transition: all 0.3s ease;
 }
 
+footer {
+
+    text-align: center;
+    background-color: #333;
+    padding: 10px;
+    margin: 0;
+    color: white;
+    letter-spacing: 3px;
+    font-family: Papyrus, cursive;
+}
+
+/* ---------------------------------------- GENERAL -------------------------------- */
+
+/* ---------------------------------------- INDEX -------------------------------- */
 main .about-us {
     display: grid;
     justify-content: center;
@@ -97,18 +120,9 @@ main .customer-reviews {
     padding: 20px;
     margin: 20px;
 }
+/* ---------------------------------------- INDEX -------------------------------- */
 
-footer {
-    
-    text-align: center;
-    background-color: #333;
-    padding: 10px;
-    margin: 0;
-    color: white;
-    letter-spacing: 3px;
-    font-family: Papyrus, cursive;
-}
-
+/* ---------------------------------------- PRODUCT -------------------------------- */
 .product-grid {
     display: grid;
     background-color: #ddd;
@@ -145,19 +159,50 @@ footer {
 
 /* "Add to Cart" Button */
 .product-card button {
-    background-color: #4CAF50;
+    background-color: dimgrey;
     padding: 10px;
     border-radius: 5px;
     margin: 10px;
+    color: white;
     font-family: Papyrus, cursive;
     transition: background-color 0.3s ease;
 }
 
 .product-card button:hover {
     background-color: #45A049;
+    font-weight: bold;
+    color: black;
 }
 
-/* Contact Information Section */
+.remove-button {
+    background-color: dimgrey;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    color: white;
+    font-family: Papyrus, cursive;
+    transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+    background-color: #ff0000;
+    font-weight: bold;
+    color: black;
+}
+
+.cart-display {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* ---------------------------------------- PRODUCT -------------------------------- */
+
+/* ---------------------------------------- CONTACT -------------------------------- */
 main section {
     display: grid;
     justify-content: center;
@@ -180,7 +225,9 @@ main section {
     color: #007BFF;
 }
 
-/* Login Form Section */
+/* ---------------------------------------- CONTACT -------------------------------- */
+
+/* ---------------------------------------- LOGIN -------------------------------- */
 main form {
     display: flex;
     flex-direction: column;
@@ -220,6 +267,18 @@ main form input[type="submit"]:hover {
     opacity: 1.0;
 }
 
+.message-box {
+    border: 2px solid black;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 20px;
+}
+
+/* ---------------------------------------- LOGIN -------------------------------- */
+
+/* ---------------------------------------- SIGNUP -------------------------------- */
+
 /* Signup Link */
 main p a {
     color: #007BFF;
@@ -230,3 +289,8 @@ main p a {
 main p a:hover {
     text-decoration: underline;
 }
+
+
+/* ---------------------------------------- SIGNUP -------------------------------- */
+
+
