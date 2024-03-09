@@ -132,7 +132,7 @@ if (pageURL.includes('signup.html')) {
         } else if (!emailPattern.test(email)) {
             message = 'Invalid email.';
         } else {
-            message = 'Signup successful. Welcome, ' + username + ' to Mogwarts';
+            message = 'Signup successful. Welcome, ' + username + ' to Mogwarts 🤫🧏‍♂️';
         }
 
         // Display the error or success message
